@@ -42,6 +42,5 @@ jobs:
       - run: gradle build
 
       - store_artifacts:
-          path: ./build/libs/*.jar
-          destination: artifact-file
+          path: build/libs/hu.wirthandras.common.math-0.1-SNAPSHOT.jar
 

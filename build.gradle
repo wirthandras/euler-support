@@ -25,7 +25,3 @@ compileTestKotlin {
 test {
     useJUnitPlatform()
 }
-
-build {
-
-}
