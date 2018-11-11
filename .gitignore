@@ -1,5 +1,6 @@
 # IntelliJ specific files/directories
 out
+build
 .idea
 .gradle
 *.ipr
