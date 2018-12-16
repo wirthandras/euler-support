@@ -1,4 +1,4 @@
-package hu.wirthandras.common.math.pandigital
+package com.github.wirthandras.eulersupport.pandigital
 
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue

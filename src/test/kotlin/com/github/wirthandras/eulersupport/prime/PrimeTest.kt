@@ -1,4 +1,4 @@
-package hu.wirthandras.common.math.prime
+package com.github.wirthandras.eulersupport.prime
 
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue

@@ -1,4 +1,4 @@
-package hu.wirthandras.common.math.prime
+package com.github.wirthandras.eulersupport.prime
 
 class Prime(private val number: Int) {
 

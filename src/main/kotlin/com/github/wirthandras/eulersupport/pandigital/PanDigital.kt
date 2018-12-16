@@ -1,6 +1,4 @@
-package hu.wirthandras.common.math.pandigital
-
-import kotlin.collections.HashSet
+package com.github.wirthandras.eulersupport.pandigital
 
 class PanDigital {
 
@@ -9,7 +7,7 @@ class PanDigital {
         if(numberAsString.length > 10) {
             return false
         }
-        var set = HashSet<Char>()
+        val set = HashSet<Char>()
         for (c in numberAsString.toCharArray()) {
             if(!set.add(c)) {
                 return false
