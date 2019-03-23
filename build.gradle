@@ -1,5 +1,6 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.2.71'
+    id "org.sonarqube" version "2.7"
 }
 
 group 'hu.wirthandras'
@@ -24,4 +25,13 @@ compileTestKotlin {
 
 test {
     useJUnitPlatform()
+}
+
+sonarqube {
+    properties {
+        properties["sonar.projectKey"] = ${SONAR_HOST_URL}
+        properties["sonar.organization"] = ${SONAR_ORGANISATION}
+        properties["sonar.host.url"] = ${SONAR_PROJECT_KEY}
+        properties["sonar.login"] = ${SONAR_TOKEN}
+    }
 }
