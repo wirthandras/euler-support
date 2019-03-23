@@ -26,10 +26,19 @@ compileTestKotlin {
 
 test {
     useJUnitPlatform()
+    jacoco {
+        destinationFile = file("${buildDir}/jacoco/test.exec")
+    }
 }
 
 jacoco {
     toolVersion = "0.8.3"
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+    }
 }
 
 sonarqube {
